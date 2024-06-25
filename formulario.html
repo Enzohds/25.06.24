@@ -1,0 +1,78 @@
+<form id="feedback-form">
+    <h2>Seu Feedback é Importante!</h2>
+    <p>Nós valorizamos sua opinião e gostaríamos de saber sobre sua experiência em nosso restaurante.</p>
+    <link rel="stylesheet" href="formulario.css" />
+    <form id="feedback-form" action="restaurant_feedback.php" method="post">
+
+        <input type="submit" value="Enviar Feedback">
+      </form>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="name" required>
+  
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="phone">
+  
+    <label for="data-visita">Data da Visita:</label>
+    <input type="date" id="data-visita" name="visit-date" required>
+  
+    <label for="hora-visita">Hora da Visita:</label>
+    <input type="time" id="hora-visita" name="visit-time" required>
+  
+    <label for="comida">Qual foi sua comida favorita?</label>
+    <select id="comida" name="favorite-food" required>
+      <option value="">Selecione uma opção</option>
+      <option value="Prato Principal">Prato Principal</option>
+      <option value="Sobremesa">Sobremesa</option>
+      <option value="Bebida">Bebida</option>
+      <option value="Outro">Outro (especifique)</option>
+    </select>
+  
+    <label for="qualidade-comida">Qualidade da comida:</label>
+    <ul>
+      <li>
+        <input type="radio" id="excelente" name="food-quality" value="Excelente">
+        <label for="excelente">Excelente</label>
+      </li>
+      <li>
+        <input type="radio" id="boa" name="food-quality" value="Boa">
+        <label for="boa">Boa</label>
+      </li>
+      <li>
+        <input type="radio" id="regular" name="food-quality" value="Regular">
+        <label for="regular">Regular</label>
+      </li>
+      <li>
+        <input type="radio" id="ruim" name="food-quality" value="Ruim">
+        <label for="ruim">Ruim</label>
+      </li>
+    </ul>
+  
+    <label for="atendimento">Atendimento:</label>
+    <ul>
+      <li>
+        <input type="radio" id="excelente-atendimento" name="service-quality" value="Excelente">
+        <label for="excelente-atendimento">Excelente</label>
+      </li>
+      <li>
+        <input type="radio" id="boa-atendimento" name="service-quality" value="Boa">
+        <label for="boa-atendimento">Boa</label>
+      </li>
+      <li>
+        <input type="radio" id="regular-atendimento" name="service-quality" value="Regular">
+        <label for="regular-atendimento">Regular</label>
+      </li>
+      <li>
+        <input type="radio" id="ruim-atendimento" name="service-quality" value="Ruim">
+        <label for="ruim-atendimento">Ruim</label>
+      </li>
+    </ul>
+  
+    <label for="comentarios">Comentários adicionais:</label>
+    <textarea id="comentarios" name="comments"></textarea>
+  
+    <input type="submit" value="Enviar Feedback">
+  </form>
+  
